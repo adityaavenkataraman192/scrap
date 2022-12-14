@@ -3,7 +3,7 @@ app=Flask(__name__)
 from bs4 import BeautifulSoup
 import requests
 
-#'https://www.worldometers.info/coronavirus
+
 url='https://en.m.wikipedia.org/wiki/List_of_largest_Internet_companies'
 req=requests.get(url)
 bsObj=BeautifulSoup(req.text,"html.parser")
